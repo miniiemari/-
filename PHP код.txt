@@ -1,0 +1,78 @@
+<?php
+// Класс пользователя
+class User 
+{
+    public $user_id;
+    public $name;
+    public $email;
+    public $password;
+    public $city_id;
+    // Метод для регистрации пользователя
+    public function register($name, $email, $password, $city_id)
+    {
+    }
+    // Метод для авторизации пользователя
+    public function login($email, $password) 
+    {
+    }
+}
+// Класс товара
+class Product 
+{
+    public $product_id;
+    public $subcategory_id;
+    public $name;
+    public $image;
+    public $price;
+    // Метод для поиска товаров
+    public static function search($query) 
+    {
+    }
+    // Метод для получения деталей товара
+    public static function getDetails($product_id)
+    {
+    }
+}
+// Класс корзины
+class Cart 
+{
+    public $user_id;
+    public $items = array();
+    // Метод для добавления товара в корзину
+    public function addItem($product_id, $quantity) 
+    {
+    }
+    // Метод для удаления товара из корзины
+    public function removeItem($product_id) 
+    {
+    }
+    // Метод для оформления заказа
+    public function checkout() 
+    {
+    }
+}
+// API для оформления заказа
+class OrderAPI 
+    {
+    // Метод для регистрации нового пользователя
+    public function registerUser($request) 
+    { 
+    }
+    // Метод для входа пользователя
+    public function loginUser($request) 
+    {
+    }
+    // Метод для поиска товаров
+    public function searchProducts($request) 
+    {
+    }
+    // Метод для добавления товара в корзину
+    public function addToCart($request) 
+    {
+    }
+    // Метод для оформления заказа
+    public function createOrder($request) 
+    {
+    }
+}
+?>
